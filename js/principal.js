@@ -3,3 +3,6 @@
         console.log(titulo);
         console.log(titulo.textContent);
         titulo.textContent="Kauan Nutricions";
+        var paciente = document.querySelector("#primeiro-paciente")
+        console.log(paciente)
+        //IMC = peso/altura * altura
