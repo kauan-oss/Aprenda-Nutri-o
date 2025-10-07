@@ -6,11 +6,11 @@ titulo.textContent="Kauan Nutricions";
   
 
 var paciente = document.querySelector("#primeiro-paciente");
-console.log(paciente);
+console.log(#primeiro-paciente);
 
 var tdPeso = paciente.querySelector(".info-peso");
 var peso = tdPeso.textContent;
-console.log('tdPeso');
+console.log(Peso);
 
 var tdAltura = document.querySelector(".info-altura");      
 var altura = tdAltura.textContent;
