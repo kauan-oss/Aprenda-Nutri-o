@@ -6,14 +6,15 @@ titulo.textContent="Kauan Nutricions";
   
 
 var paciente = document.querySelector("#primeiro-paciente");
-var paciente = tdNome.textContent;
+var paciente = tdPaciente.textContent;
 console.log(paciente);
 
 var tdPeso = paciente.querySelector(".info-peso");
 var peso = tdPeso.textContent;
-console.log(tdPeso);
+console.log(Peso);
 
 var tdAltura = document.querySelector(".info-altura");      
 var altura = tdAltura.textContent;
 console.log(altura);
+
 //IMC = peso/altura * altura
