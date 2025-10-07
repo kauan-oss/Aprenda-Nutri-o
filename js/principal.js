@@ -5,8 +5,8 @@ console.log(titulo.textContent);
 titulo.textContent="Kauan Nutricions";
   
 
-var tdPaciente = document.querySelector("#primeiro-paciente");
-var paciente = tdPaciente.textContent;
+var tdNome= document.querySelector("#primeiro-paciente");
+var paciente = tdNome.textContent;
 console.log(paciente);
 
 var tdPeso = document.querySelector(".info-peso");
