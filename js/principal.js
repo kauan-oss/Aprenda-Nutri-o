@@ -23,3 +23,21 @@ var imc = peso/ (altura * altura);
 tdImc.textContent = imc;
 console.log(imc);
 //IMC = peso/altura * altura
+
+var pesoEhValido = true;
+var alturaEhValido = true;
+
+if(peso < 0 || peso > 1000){
+    console.log("Peso inválido");
+    var pesoEhValido = false;
+}
+
+if(altura < 0 || altura > 3.00){
+    console.log("Altura inválida!");
+    var alturaEhValido = false;
+}
+
+if(alturaEhValido && pesoEhValido){
+    var imc = peso / (altura*altura);
+    tdImc.textContent = imc;
+}
