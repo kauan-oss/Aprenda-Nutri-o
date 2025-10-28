@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aparecida Nutrição</title>
+    <title>Nutrição</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="js/principal.js">
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="container">
-            <h1> Aparecida Nutrição </h1>
+            <h1> Kauan Nutrição </h1>
         </div>
     </header>
 
@@ -78,6 +78,31 @@
             </table>
         </section>
     </main>
+
+        <section class="container">
+        <br>
+        <h2 id="titulo-form">Adicionar novo paciente</h2>
+        <form id="form-adiciona">
+            <div class="grupo">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso:</label>
+                <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura:</label>
+                <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="gordura">% de Gordura:</label>
+                <input id="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
+            </div>
+
+            <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
 
 <script src="js/principal.js"> </script>
 
