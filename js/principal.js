@@ -4,7 +4,7 @@ console.log(titulo.textContent);
 titulo.textContent = ("Kauan Nutricions");
 
 
-21/10
+//21/10
 
 var pacientes = document.querySelectorAll(".paciente");
 
@@ -56,12 +56,6 @@ for (var i = 0; i < pacientes.length; i++) {
 titulo.addEventListener("click", function(){
     alert("Ola eu fui clicado numa funcao anonima");
 });
-
-
-
-
-
-
 
 // EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
