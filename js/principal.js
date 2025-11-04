@@ -1,15 +1,13 @@
+//console.log(document.querySelector("h1"));
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent = ("Kauan Nutricions");
+titulo.textContent = ("White nutritions");
 
+    var pacientes = document.querySelectorAll(".paciente");
 
-//21/10
+for(var i = 0; i < pacientes.length; i++) {
 
-var pacientes = document.querySelectorAll(".paciente");
-
-for (var i = 0; i < pacientes.length; i++) {
-    
     var paciente = pacientes[i];
 
     var tdPeso = paciente.querySelector(".info-peso");
@@ -21,70 +19,68 @@ for (var i = 0; i < pacientes.length; i++) {
     var tdImc = paciente.querySelector(".info-imc");
 
     var pesoEhValido = true;
-    var alturaEhValida = true;
+    var alturaEhValido = true;
 
-    if (peso <= 0 || peso >= 1000) {
-        console.log("Peso inválido!");
-        pesoEhValido = false;
-        tdImc.textContent = "Peso inválido";
-        paciente.classList.add("paciente-invalido");
+    if (peso <= 0 || peso >= 1000){
+    console.log("Peso inválido!");
+    pesoEhvalido = false;
+    tdImc.textContent = "Peso inválido!";
+    paciente.classList.add("paciente-invalido");
     }
 
-    if (altura <= 0 || altura >= 3.00) {
-        console.log("Altura inválida!");
-        alturaEhValida = false;
-        tdImc.textContent = "Altura inválida";
-        paciente.classList.add("paciente-invalido");
+    if (altura <= 0 || altura >= 3.00){
+    console.log("Altura inválida!");
+    alturaEhValido = false;
+    tdImc.textContent = "Altura inválida!";
+    paciente.classList.add("paciente-invalido");
     }
 
-  if (alturaEhValida && pesoEhValido) {
-        var imc = peso / (altura * altura);
-        tdImc.textContent = imc.toFixed(2);
+    if (alturaEhValido && pesoEhValido){
+    var imc = peso / (altura * altura);
+    tdImc.textContent = imc.toFixed(2);
     }
-}
+    }
 
-// 23/10
 
-// titulo.addEventListener() adiciona um escutador de eventos. 
-// PRIMEIRO MOSTRAR ESSA - DEPOIS ALTERA-LA PARA FICAR ANONIMA
-// titulo.addEventListener("click", mostraMensagem);
-// function mostraMensagem(){
-//     alert("Olá eu fui clicado.")
-// }
+    titulo.addEventListener("click", mostraMensagem);
+    function mostraMensagem(){
+    alert("Olá eu fui clicado.")
+    }
 
-// funcao anonima = a de cima mas diferente
-titulo.addEventListener("click", function(){
-    alert("Ola eu fui clicado numa funcao anonima");
-});
-
-// EU QUERO CHAMAR UM EVENTO DE CLICK QUANDO CLICAR NO BOTAO ADICIONAR
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
-botaoAdicionar.addEventListener("click", function (event) { //abre chaves do botao
+botaoAdicionar.addEventListener("click", function(event){
     event.preventDefault();
-    alert("Oi eu sou o botao e fui clicado");
+    //alert("Oi eu sou o botão e fui clicado");
+
+
     var form = document.querySelector("#form-adiciona");
 
     var nome = form.nome.value;
     var peso = form.peso.value;
-    var altura form.altura.value;
-    var gordura form.gordura.value;
-
-    //28/10
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
 
     var pacienteTr = document.createElement("tr");
+
     var nomeTd = document.createElement("td");
     var pesoTd = document.createElement("td");
-    var alturald = document.createElement("td");
+    var alturaTd = document.createElement("td");
     var gorduraTd = document.createElement("td");
     var imcTd = document.createElement("td");
-    = nome; nomeTd.textContent
+
+
+    nomeTd.textContent = nome;
     pesoTd.textContent = peso;
     alturaTd.textContent = altura;
     gorduraTd.textContent = gordura;
+    //imcTd.textContent = imc;
+
     pacienteTr.appendChild(nomeTd);
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
     pacienteTr.appendChild(gorduraTd);
-    var tabela document.querySelector("#tabela-pacientes");
+
+    var tabela = document.querySelector("#tabela-pacientes");
+    
     tabela.appendChild(pacienteTr);
 });
