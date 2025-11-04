@@ -70,6 +70,7 @@ botaoAdicionar.addEventListener("click", function (event) { //abre chaves do bot
     var gordura form.gordura.value;
 
     //28/10
+
     var pacienteTr = document.createElement("tr");
     var nomeTd = document.createElement("td");
     var pesoTd = document.createElement("td");
@@ -86,4 +87,4 @@ botaoAdicionar.addEventListener("click", function (event) { //abre chaves do bot
     pacienteTr.appendChild(gorduraTd);
     var tabela document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacienteTr);
-    }); //fecha chaves do botao e fecha o parenteses da funcao
+});
