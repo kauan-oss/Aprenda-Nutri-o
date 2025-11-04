@@ -23,7 +23,7 @@ botaoAdicionar.addEventListener("click", function(event){
     nomeTd.textContent = nome;
     pesoTd.textContent = peso;
     alturaTd.textContent = altura;
-    gorduraTd.textContent = gordura;
+    gorduraTd.textContent = calculaImc(peso, altura);
     //imcTd.textContent = imc;
 
     pacienteTr.appendChild(nomeTd);
